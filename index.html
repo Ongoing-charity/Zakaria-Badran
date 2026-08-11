@@ -1,0 +1,740 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>صدقة جارية | زكريا بدران</title>
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400&family=Reem+Kufi:wght@500;700&family=Scheherazade+New:wght@400;700&family=Tajawal:wght@300;400;500;700&display=swap" rel="stylesheet">
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        gold: {
+                            50: '#fffdf0',
+                            100: '#fefab8',
+                            200: '#fdf380',
+                            300: '#fce748',
+                            400: '#fbd71f',
+                            500: '#e5bb09',
+                            600: '#b78c05',
+                            700: '#8a6203',
+                            800: '#5c3f02',
+                            900: '#332001',
+                        },
+                        tan: {
+                            50: '#fbf9f5',
+                            100: '#f5f0e6',
+                            200: '#e8dbca',
+                            300: '#d9c2a8',
+                            400: '#c7a584',
+                            500: '#b48a63',
+                            600: '#9d6f4b',
+                            700: '#7e5539',
+                            800: '#5e3e29',
+                            900: '#3b2518',
+                            950: '#21130a',
+                        }
+                    },
+                    fontFamily: {
+                        quran: ['"Scheherazade New"', 'Amiri', 'serif'],
+                        amiri: ['Amiri', 'serif'],
+                        kufi: ['"Reem Kufi"', 'sans-serif'],
+                        sans: ['Tajawal', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        .islamic-pattern {
+            background-color: #21130a;
+            background-image: radial-gradient(#b78c05 0.75px, transparent 0.75px), radial-gradient(#b78c05 0.75px, #21130a 0.75px);
+            background-size: 30px 30px;
+            background-position: 0 0, 15px 15px;
+        }
+        
+        .light-pattern {
+            background-color: #fbf9f5;
+            background-image: radial-gradient(#c7a584 0.5px, transparent 0.5px), radial-gradient(#c7a584 0.5px, #fbf9f5 0.5px);
+            background-size: 20px 20px;
+            background-position: 0 0, 10px 10px;
+        }
+
+        .custom-scrollbar::-webkit-scrollbar {
+            width: 8px;
+        }
+        .custom-scrollbar::-webkit-scrollbar-track {
+            background: #f5f0e6;
+            border-radius: 10px;
+        }
+        .custom-scrollbar::-webkit-scrollbar-thumb {
+            background: #b78c05;
+            border-radius: 10px;
+        }
+        .custom-scrollbar::-webkit-scrollbar-thumb:hover {
+            background: #8a6203;
+        }
+
+        .text-shadow-gold {
+            text-shadow: 0 2px 4px rgba(183, 140, 5, 0.3);
+        }
+        
+        .active-scale {
+            transition: transform 0.1s ease-in-out;
+        }
+        .active-scale:active {
+            transform: scale(0.95);
+        }
+
+        .tasbeeh-btn {
+            touch-action: manipulation;
+        }
+    </style>
+</head>
+<body class="bg-tan-50 text-tan-950 font-sans min-h-screen flex flex-col selection:bg-gold-500 selection:text-white">
+
+    <header class="islamic-pattern text-gold-100 py-12 px-4 shadow-2xl relative overflow-hidden border-b-4 border-gold-500">
+        <div class="absolute inset-0 opacity-10 bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-gold-300 via-tan-800 to-black"></div>
+        <div class="max-w-4xl mx-auto text-center relative z-10 space-y-4">
+            
+            <div class="inline-block p-3 rounded-full bg-tan-900/80 border-2 border-gold-400 mb-2 shadow-lg">
+                <i class="fa-solid fa-kaaba text-3xl text-gold-400"></i>
+            </div>
+            
+            <h1 class="text-3xl md:text-5xl font-bold font-kufi text-gold-300 text-shadow-gold tracking-wide">
+                صدقة جارية
+            </h1>
+            
+            <div class="flex items-center justify-center gap-3 my-2">
+                <span class="h-[1px] w-12 bg-gold-500/60"></span>
+                <p class="text-xl md:text-2xl font-semibold text-tan-100 font-amiri">
+                    عن روح المغفور له بإذن الله تعالى
+                </p>
+                <span class="h-[1px] w-12 bg-gold-500/60"></span>
+            </div>
+
+            <div class="inline-block bg-tan-900/90 border border-gold-400/60 px-8 py-3 rounded-2xl shadow-xl">
+                <h2 class="text-2xl md:text-4xl font-bold font-amiri text-gold-400">
+                    زكريا بدران
+                </h2>
+                <p class="text-xs text-gold-200/80 mt-1">تغمده الله بواسع رحمته وفسيح جناته</p>
+            </div>
+
+            <p class="text-base md:text-lg font-amiri text-tan-200 max-w-2xl mx-auto leading-relaxed pt-2">
+                "وَبَشِّرِ الصَّابِرِينَ الَّذِينَ إِذَا أَصَابَتْهُم مُّصِيبَةٌ قَالُوا إِنَّا لِلَّهِ وَإِنَّا إِلَيْهِ رَاجِعُونَ"
+            </p>
+        </div>
+    </header>
+
+    <section class="max-w-4xl mx-auto w-full px-4 -mt-6 z-20">
+        <div class="bg-tan-900 text-gold-100 rounded-2xl p-4 shadow-xl border border-gold-500/40 flex flex-col md:flex-row items-center justify-between gap-4">
+            <div class="flex items-center gap-3 w-full md:w-auto">
+                <div class="w-12 h-12 rounded-full bg-gold-500/20 border border-gold-400 flex items-center justify-center text-gold-400 flex-shrink-0">
+                    <i class="fa-solid fa-volume-high text-xl" id="audio-icon"></i>
+                </div>
+                <div>
+                    <p class="text-xs text-gold-300 font-medium">تلاوات مباركة (بصوت الشيخ مشاري العفاسي)</p>
+                    <h3 class="text-base font-bold text-white font-amiri" id="current-track-title">سورة الفاتحة</h3>
+                </div>
+            </div>
+
+            <!-- Audio Controls -->
+            <div class="flex items-center gap-3 w-full md:w-auto justify-center">
+                <select id="audio-select" onchange="changeTrack(this.value)" class="bg-tan-950 text-gold-200 border border-gold-500/50 rounded-xl px-3 py-2 text-sm focus:outline-none focus:border-gold-400 cursor-pointer">
+                    <option value="fatiha">سورة الفاتحة</option>
+                    <option value="yasin">سورة يس</option>
+                    <option value="mulk">سورة الملك</option>
+                </select>
+
+                <button id="play-btn" onclick="toggleAudio()" class="bg-gold-500 hover:bg-gold-400 text-tan-950 w-10 h-10 rounded-full flex items-center justify-center font-bold shadow-md transition active-scale">
+                    <i class="fa-solid fa-play" id="play-icon"></i>
+                </button>
+            </div>
+
+            <audio id="quran-audio" preload="metadata" onended="onAudioEnded()" ontimeupdate="updateProgress()">
+                <source id="audio-source" src="https://server8.mp3quran.net/afs/001.mp3" type="audio/mpeg">
+            </audio>
+        </div>
+    </section>
+
+    <section class="max-w-4xl mx-auto w-full px-4 py-8">
+        <div class="bg-gradient-to-b from-tan-900 via-tan-950 to-tan-900 text-gold-100 rounded-3xl p-6 md:p-10 shadow-2xl border-2 border-gold-400/70 relative overflow-hidden text-center">
+            
+            <!-- Islamic Corner Accents -->
+            <div class="absolute top-3 right-3 text-gold-500/30 text-3xl"><i class="fa-solid fa-feather-pointed"></i></div>
+            <div class="absolute bottom-3 left-3 text-gold-500/30 text-3xl"><i class="fa-solid fa-square-poll-vertical"></i></div>
+
+            <div class="inline-flex items-center justify-center gap-3 border-b-2 border-gold-400/50 pb-2 mb-6">
+                <i class="fa-solid fa-quote-right text-gold-400 text-xl"></i>
+                <h2 class="text-2xl md:text-3xl font-bold font-kufi text-gold-300">
+                    فِي رِثَاءِ زَكَرِيَّا بَدْرَان
+                </h2>
+                <i class="fa-solid fa-quote-left text-gold-400 text-xl"></i>
+            </div>
+
+            <!-- Poetry Verses Grid -->
+            <div class="space-y-6 font-amiri text-lg md:text-2xl leading-loose text-tan-100 max-w-2xl mx-auto py-2">
+                
+                <!-- Verse 1 -->
+                <div class="p-4 rounded-2xl bg-tan-900/60 border border-gold-500/30 shadow-inner space-y-2 md:space-y-0 md:flex md:justify-between md:items-center">
+                    <span class="block md:w-1/2 text-center md:text-right font-bold text-gold-200">
+                        رَحَلْتَ إِلَى رَبِّ الْعِبَادِ مُسَلِّماً
+                    </span>
+                    <span class="hidden md:inline text-gold-500/50">✦</span>
+                    <span class="block md:w-1/2 text-center md:text-left text-tan-200">
+                        وَخَلَّفْتَ فِي الْقَلْبِ الْجَرِيحِ تَذَكُّرَا
+                    </span>
+                </div>
+
+                <!-- Verse 2 -->
+                <div class="p-4 rounded-2xl bg-tan-900/60 border border-gold-500/30 shadow-inner space-y-2 md:space-y-0 md:flex md:justify-between md:items-center">
+                    <span class="block md:w-1/2 text-center md:text-right font-bold text-gold-200">
+                        فَيَا قَبْرَ ذَكَرِيَّا عَلَيْكَ سَلَامَةٌ
+                    </span>
+                    <span class="hidden md:inline text-gold-500/50">✦</span>
+                    <span class="block md:w-1/2 text-center md:text-left text-tan-200">
+                        وَمِنْ رَبِّكَ الرَّحْمَنِ نِلْتَ الْمُعَظَّرَا
+                    </span>
+                </div>
+
+                <!-- Verse 3 -->
+                <div class="p-4 rounded-2xl bg-tan-900/60 border border-gold-500/30 shadow-inner space-y-2 md:space-y-0 md:flex md:justify-between md:items-center">
+                    <span class="block md:w-1/2 text-center md:text-right font-bold text-gold-200">
+                        سَتَبْقَى فِي الْجَنَّاتِ تَحْظَى بِنَعِيمِهَا
+                    </span>
+                    <span class="hidden md:inline text-gold-500/50">✦</span>
+                    <span class="block md:w-1/2 text-center md:text-left text-tan-200">
+                        وَتَسْكُنُ فِي الْفِرْدَوْسِ رُوحُكَ مُبْشِرَا
+                    </span>
+                </div>
+
+            </div>
+
+            <!-- Poem Action Button -->
+            <div class="mt-6 pt-4 border-t border-tan-800 flex justify-center">
+                <button onclick="copyPoemText()" class="bg-tan-800 hover:bg-gold-600 text-gold-100 hover:text-tan-950 px-6 py-2.5 rounded-xl border border-gold-400/50 text-sm font-bold flex items-center gap-2 transition active-scale shadow-lg">
+                    <i class="fa-regular fa-copy"></i>
+                    نسخ أبيات الرثاء
+                </button>
+            </div>
+
+        </div>
+    </section>
+
+    <main class="max-w-6xl mx-auto px-4 py-6 space-y-12 flex-grow">
+        
+        <section class="space-y-6">
+            <div class="text-center space-y-2">
+                <h2 class="text-2xl md:text-3xl font-bold font-kufi text-tan-900 flex items-center justify-center gap-3">
+                    <i class="fa-solid fa-book-quran text-gold-600"></i>
+                    سور قرآنية مباركة
+                </h2>
+                <p class="text-sm text-tan-700">اقرأ وادعُ للمتوفى بالرحمة والمغفرة</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <!-- Surah Fatiha Card -->
+                <div class="bg-white rounded-2xl p-6 shadow-md hover:shadow-xl border border-tan-200 flex flex-col justify-between space-y-4 transition">
+                    <div class="flex justify-between items-start">
+                        <div>
+                            <span class="text-xs bg-gold-100 text-gold-800 font-bold px-2.5 py-1 rounded-full border border-gold-300">سورة 1</span>
+                            <h3 class="text-2xl font-bold font-quran text-tan-900 mt-2">سورة الفاتحة</h3>
+                        </div>
+                        <i class="fa-solid fa-heart-pulse text-gold-500 text-2xl"></i>
+                    </div>
+                    <p class="text-sm text-tan-700 line-clamp-2 font-amiri">
+                        بِسْمِ اللَّهِ الرَّحْمَنِ الرَّحِيمِ ۞ الْحَمْدُ لِلَّهِ رَبِّ الْعَالَمِينَ ۞ الرَّحْمَنِ الرَّحِيمِ...
+                    </p>
+                    <button onclick="openModal('fatiha-modal')" class="w-full bg-tan-900 hover:bg-gold-600 text-gold-100 hover:text-tan-950 py-2.5 rounded-xl font-bold text-sm transition active-scale flex items-center justify-center gap-2">
+                        <i class="fa-solid fa-book-open"></i>
+                        قراءة سورة الفاتحة
+                    </button>
+                </div>
+
+                <!-- Surah Yasin Card -->
+                <div class="bg-white rounded-2xl p-6 shadow-md hover:shadow-xl border border-tan-200 flex flex-col justify-between space-y-4 transition">
+                    <div class="flex justify-between items-start">
+                        <div>
+                            <span class="text-xs bg-gold-100 text-gold-800 font-bold px-2.5 py-1 rounded-full border border-gold-300">سورة 36</span>
+                            <h3 class="text-2xl font-bold font-quran text-tan-900 mt-2">سورة يس</h3>
+                        </div>
+                        <i class="fa-solid fa-star text-gold-500 text-2xl"></i>
+                    </div>
+                    <p class="text-sm text-tan-700 line-clamp-2 font-amiri">
+                        يسٓ ۞ وَٱلۡقُرۡءَانِ ٱلۡحَكِيمِ ۞ إِنَّكَ لَمِنَ ٱلۡمُرۡسَلِينَ ۞ عَلَىٰ صِرَٰطٖ مُّسۡتَقِيمٖ...
+                    </p>
+                    <button onclick="openModal('yasin-modal')" class="w-full bg-tan-900 hover:bg-gold-600 text-gold-100 hover:text-tan-950 py-2.5 rounded-xl font-bold text-sm transition active-scale flex items-center justify-center gap-2">
+                        <i class="fa-solid fa-book-open"></i>
+                        قراءة سورة يس كاملة
+                    </button>
+                </div>
+
+                <!-- Surah Mulk Card -->
+                <div class="bg-white rounded-2xl p-6 shadow-md hover:shadow-xl border border-tan-200 flex flex-col justify-between space-y-4 transition">
+                    <div class="flex justify-between items-start">
+                        <div>
+                            <span class="text-xs bg-gold-100 text-gold-800 font-bold px-2.5 py-1 rounded-full border border-gold-300">سورة 67</span>
+                            <h3 class="text-2xl font-bold font-quran text-tan-900 mt-2">سورة الملك</h3>
+                        </div>
+                        <i class="fa-solid fa-shield-halved text-gold-500 text-2xl"></i>
+                    </div>
+                    <p class="text-sm text-tan-700 line-clamp-2 font-amiri">
+                        تَبَٰرَكَ ٱلَّذِي بِيَدِهِ ٱلۡمُلۡكُ وَهُوَ عَلَىٰ كُلِّ شَيۡءٖ قَدِيرٌ ۞ ٱلَّذِي خَلَقَ ٱلۡمَوۡتَ وَٱلۡحَيَوٰةَ...
+                    </p>
+                    <button onclick="openModal('mulk-modal')" class="w-full bg-tan-900 hover:bg-gold-600 text-gold-100 hover:text-tan-950 py-2.5 rounded-xl font-bold text-sm transition active-scale flex items-center justify-center gap-2">
+                        <i class="fa-solid fa-book-open"></i>
+                        قراءة سورة الملك كاملة
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <section class="space-y-6">
+            <div class="bg-tan-900 text-gold-100 rounded-3xl p-6 md:p-8 shadow-2xl border-2 border-gold-400/50">
+                <div class="flex flex-col md:flex-row justify-between items-center gap-4 mb-6 pb-6 border-b border-tan-800">
+                    <div>
+                        <h2 class="text-2xl md:text-3xl font-bold font-kufi text-gold-300 flex items-center gap-3">
+                            <i class="fa-solid fa-hands-praying text-gold-400"></i>
+                            المسبحة الإلكترونية التفاعلية
+                        </h2>
+                        <p class="text-xs md:text-sm text-tan-300 mt-1">اضغط على الأذكار للتسبيح، تُحفظ تسبيحاتك تلقائياً كصدقة جارية</p>
+                    </div>
+
+                    <div class="bg-tan-950 border border-gold-500/40 rounded-2xl px-6 py-3 text-center shadow-inner min-w-[200px]">
+                        <span class="text-xs text-gold-300 font-bold block">مجموع التسبيحات الكلي</span>
+                        <span class="text-3xl font-extrabold text-gold-400 font-mono tracking-wider" id="total-counter">0</span>
+                    </div>
+                </div>
+
+                <!-- Grid of 12 Tasbeeh Cards -->
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4" id="tasbeeh-grid">
+                    <!-- Dynamic Tasbeeh Items generated via JS -->
+                </div>
+
+                <div class="mt-6 text-center pt-4 border-t border-tan-800">
+                    <button onclick="resetAllCounters()" class="text-xs text-tan-400 hover:text-gold-300 underline transition">
+                        إعادة ضبط جميع العدادات الشخصية
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <section class="space-y-6">
+            <div class="text-center space-y-2">
+                <h2 class="text-2xl md:text-3xl font-bold font-kufi text-tan-900 flex items-center justify-center gap-3">
+                    <i class="fa-solid fa-hands-holding text-gold-600"></i>
+                    أدعية مأثورة للمتوفى
+                </h2>
+                <p class="text-sm text-tan-700">شاركونا الدعاء لفقيدنا بالرحمة والمغفرة</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <!-- Dua Card 1 -->
+                <div class="bg-white rounded-2xl p-6 shadow-md border border-tan-200 flex flex-col justify-between space-y-4">
+                    <div class="space-y-3">
+                        <div class="flex items-center gap-2 text-gold-600 font-bold text-sm">
+                            <i class="fa-solid fa-star-and-crescent"></i>
+                            <span>دعاء بالرحمة والمغفرة</span>
+                        </div>
+                        <p class="font-amiri text-xl leading-loose text-tan-950" id="dua-1">
+                            اللَّهُمَّ اغْفِرْ لَهُ وَارْحَمْهُ، وَعَافِهِ وَاعْفُ عَنْهُ، وَأَكْرِمْ نُزُلَهُ، وَوَسِّعْ مُدْخَلَهُ، وَاغْسِلْهُ بِالْمَاءِ وَالثَّلْجِ وَالْبَرَدِ، وَنَقِّهِ مِنَ الْخَطَايَا كَمَا نَقَّيْتَ الثَّوْبَ الأَبْيَضَ مِنَ الدَّنَسِ.
+                        </p>
+                    </div>
+                    <button onclick="copyText('dua-1')" class="self-end bg-tan-100 hover:bg-gold-500 hover:text-tan-950 text-tan-800 px-4 py-2 rounded-xl text-xs font-bold flex items-center gap-2 transition active-scale">
+                        <i class="fa-regular fa-copy"></i>
+                        نسخ الدعاء
+                    </button>
+                </div>
+
+                <!-- Dua Card 2 -->
+                <div class="bg-white rounded-2xl p-6 shadow-md border border-tan-200 flex flex-col justify-between space-y-4">
+                    <div class="space-y-3">
+                        <div class="flex items-center gap-2 text-gold-600 font-bold text-sm">
+                            <i class="fa-solid fa-kaaba"></i>
+                            <span>دعاء بالنور والفسحة</span>
+                        </div>
+                        <p class="font-amiri text-xl leading-loose text-tan-950" id="dua-2">
+                            اللَّهُمَّ أَبْدِلْهُ دَارًا خَيْرًا مِنْ دَارِهِ، وَأَهْلاً خَيْرًا مِنْ أَهْلِهِ، وَأَدْخِلْهُ الْجَنَّةَ، وَأَعِذْهُ مِنْ عَذَابِ الْقَبْرِ وَمِنْ عَذَابِ النَّارِ، وَاجْعَلْ قَبْرَهُ رَوْضَةً مِنْ رِيَاضِ الْجَنَّةِ.
+                        </p>
+                    </div>
+                    <button onclick="copyText('dua-2')" class="self-end bg-tan-100 hover:bg-gold-500 hover:text-tan-950 text-tan-800 px-4 py-2 rounded-xl text-xs font-bold flex items-center gap-2 transition active-scale">
+                        <i class="fa-regular fa-copy"></i>
+                        نسخ الدعاء
+                    </button>
+                </div>
+
+                <!-- Dua Card 3 -->
+                <div class="bg-white rounded-2xl p-6 shadow-md border border-tan-200 flex flex-col justify-between space-y-4">
+                    <div class="space-y-3">
+                        <div class="flex items-center gap-2 text-gold-600 font-bold text-sm">
+                            <i class="fa-solid fa-cloud-sun"></i>
+                            <span>دعاء بالثبات والدرجات العلى</span>
+                        </div>
+                        <p class="font-amiri text-xl leading-loose text-tan-950" id="dua-3">
+                            اللَّهُمَّ إِنَّ زَكَرِيَّا بَدْرَان فِي ذِمَّتِكَ وَحَبْلِ جِوَارِكَ، فَقِهِ فِتْنَةَ الْقَبْرِ وَعَذَابَ النَّارِ، وَأَنْتَ أَهْلُ الْوَفَاءِ وَالْحَقِّ، فَاغْفِرْ لَهُ وَارْحَمْهُ إِنَّكَ أَنْتَ الْغَفُورُ الرَّحِيمُ.
+                        </p>
+                    </div>
+                    <button onclick="copyText('dua-3')" class="self-end bg-tan-100 hover:bg-gold-500 hover:text-tan-950 text-tan-800 px-4 py-2 rounded-xl text-xs font-bold flex items-center gap-2 transition active-scale">
+                        <i class="fa-regular fa-copy"></i>
+                        نسخ الدعاء
+                    </button>
+                </div>
+
+                <!-- Dua Card 4 -->
+                <div class="bg-white rounded-2xl p-6 shadow-md border border-tan-200 flex flex-col justify-between space-y-4">
+                    <div class="space-y-3">
+                        <div class="flex items-center gap-2 text-gold-600 font-bold text-sm">
+                            <i class="fa-solid fa-leaf"></i>
+                            <span>دعاء بالسكينة والرضوان</span>
+                        </div>
+                        <p class="font-amiri text-xl leading-loose text-tan-950" id="dua-4">
+                            اللَّهُمَّ انْزِلْ عَلَى قَبْرِهِ النُّورَ وَالضِّيَاءَ وَالْفَسَحَةَ وَالسُّرُورَ، وَاجْزِهِ عَنِ الإِحْسَانِ إِحْسَانًا، وَعَنِ الإِسَاءَةِ عَفْوًا وَغُفْرَانًا.
+                        </p>
+                    </div>
+                    <button onclick="copyText('dua-4')" class="self-end bg-tan-100 hover:bg-gold-500 hover:text-tan-950 text-tan-800 px-4 py-2 rounded-xl text-xs font-bold flex items-center gap-2 transition active-scale">
+                        <i class="fa-regular fa-copy"></i>
+                        نسخ الدعاء
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <section class="bg-gradient-to-r from-tan-900 via-tan-800 to-tan-900 text-gold-100 rounded-3xl p-8 text-center space-y-4 border border-gold-500/40 shadow-xl">
+            <i class="fa-solid fa-share-nodes text-4xl text-gold-400"></i>
+            <h3 class="text-2xl font-bold font-kufi text-gold-200">
+                أنشر الموقع لتنال أجر الصدقة الجارية
+            </h3>
+            <p class="text-sm md:text-base text-tan-200 max-w-xl mx-auto leading-relaxed">
+                الدال على الخير كفاعله، شارك رابط هذه الصفحة مع أهلك وأصدقائك ليدعوا لفقيدنا العزيز ويشاركونا الأجر.
+            </p>
+            <div class="pt-2 flex justify-center">
+                <button onclick="sharePage()" class="bg-gold-500 hover:bg-gold-400 text-tan-950 font-bold px-8 py-3 rounded-2xl shadow-lg transition active-scale flex items-center gap-3 text-base">
+                    <i class="fa-solid fa-copy"></i>
+                    نسخ رابط الصفحة ومشاركتها
+                </button>
+            </div>
+        </section>
+
+    </main>
+
+    
+    <!-- Fatiha Modal -->
+    <div id="fatiha-modal" class="fixed inset-0 z-50 hidden bg-black/70 backdrop-blur-sm flex items-center justify-center p-4 opacity-0 transition-opacity duration-300">
+        <div class="bg-tan-50 rounded-3xl shadow-2xl w-full max-w-2xl max-h-[85vh] flex flex-col relative transform scale-95 transition-transform duration-300 border border-gold-400/40">
+            <div class="islamic-pattern p-4 rounded-t-3xl flex justify-between items-center border-b-4 border-gold-400">
+                <h3 class="text-xl font-bold text-gold-100 font-quran text-shadow-gold">سورة الفاتحة</h3>
+                <button onclick="closeModal('fatiha-modal')" class="text-gold-100 hover:text-white bg-white/10 hover:bg-white/20 rounded-full w-8 h-8 flex items-center justify-center transition active-scale">
+                    <i class="fa-solid fa-xmark"></i>
+                </button>
+            </div>
+            <div class="p-6 md:p-10 overflow-y-auto font-quran text-center text-2xl md:text-3xl leading-loose text-tan-950 space-y-6 custom-scrollbar">
+                <p class="font-bold text-gold-600">بِسْمِ اللَّهِ الرَّحْمَنِ الرَّحِيمِ</p>
+                <p class="leading-loose">
+                    الْحَمْدُ لِلَّهِ رَبِّ الْعَالَمِينَ ۞ الرَّحْمَنِ الرَّحِيمِ ۞ مَالِكِ يَوْمِ الدِّينِ ۞ إِيَّاكَ نَعْبُدُ وَإِيَّاكَ نَسْتَعِينُ ۞ اهْدِنَا الصِّرَاطَ الْمُسْتَقِيمَ ۞ صِرَاطَ الَّذِينَ أَنْعَمْتَ عَلَيْهِمْ غَيْرِ الْمَغْضُوبِ عَلَيْهِمْ وَلَا الضَّالِّينَ
+                </p>
+            </div>
+            <div class="p-4 bg-white/80 rounded-b-3xl text-center text-sm font-bold text-tan-800 border-t border-tan-200">
+                صدق الله العظيم
+            </div>
+        </div>
+    </div>
+
+    <!-- Yasin Modal -->
+    <div id="yasin-modal" class="fixed inset-0 z-50 hidden bg-black/70 backdrop-blur-sm flex items-center justify-center p-4 opacity-0 transition-opacity duration-300">
+        <div class="bg-tan-50 rounded-3xl shadow-2xl w-full max-w-3xl max-h-[85vh] flex flex-col relative transform scale-95 transition-transform duration-300 border border-gold-400/40">
+            <div class="islamic-pattern p-4 rounded-t-3xl flex justify-between items-center border-b-4 border-gold-400">
+                <h3 class="text-xl font-bold text-gold-100 font-quran text-shadow-gold">سورة يس</h3>
+                <button onclick="closeModal('yasin-modal')" class="text-gold-100 hover:text-white bg-white/10 hover:bg-white/20 rounded-full w-8 h-8 flex items-center justify-center transition active-scale">
+                    <i class="fa-solid fa-xmark"></i>
+                </button>
+            </div>
+            <div class="p-6 md:p-8 overflow-y-auto font-quran text-center text-xl leading-loose md:text-2xl md:leading-loose text-tan-950 space-y-4 custom-scrollbar">
+                <p class="font-bold text-gold-600 sticky top-0 bg-tan-50/90 py-1">بِسْمِ اللَّهِ الرَّحْمَنِ الرَّحِيمِ</p>
+                <p dir="rtl" class="text-justify leading-loose">
+                    يسٓ ﴿١﴾ وَٱلۡقُرۡءَانِ ٱلۡحَكِيمِ ﴿٢﴾ إِنَّكَ لَمِنَ ٱلۡمُرۡسَلِينَ ﴿٣﴾ عَلَىٰ صِرَٰطٖ مُّسۡتَقِيمٖ ﴿٤﴾ تَنزِيلَ ٱلۡعَزِيزِ ٱلرَّحِيمِ ﴿٥﴾ لِتُنذِرَ قَوۡمٗا مَّآ أُنذِرَ ءَابَآؤُهُمۡ فَهُمۡ غَٰفِلُونَ ﴿٦﴾ لَقَدۡ حَقَّ ٱلۡقَوۡلُ عَلَىٰٓ أَكۡثَرِهِمۡ فَهُمۡ لَا يُؤۡمِنُونَ ﴿٧﴾ إِنَّا جَعَلۡنَا فِيٓ أَعۡنَٰقِهِمۡ أَغۡلَٰلٗا فَهِيَ إِلَى ٱلۡأَذۡقَانِ فَهُم مُّقۡمَحُونَ ﴿٨﴾ وَجَعَلۡنَا مِنۢ بَيۡنِ أَيۡدِيهِمۡ سَدّٗا وَمِنۡ خَلۡفِهِمۡ سَدّٗا فَأَغۡشَيۡنَٰهُمۡ فَهُمۡ لَا يُبۡصِرُونَ ﴿٩﴾ وَسَوَآءٌ عَلَيۡهِمۡ ءَأَنذَرۡتَهُمۡ أَمۡ لَمۡ تُنذِرۡهُمۡ لَا يُؤۡمِنُونَ ﴿١٠﴾ إِنَّمَا تُنذِرُ مَنِ ٱتَّبَعَ ٱلذِّكۡرَ وَخَشِيَ ٱلرَّحۡمَٰنَ بِٱلۡغَيۡبِۖ فَبَشِّرۡهُ بِمَغۡفِرَةٖ وَأَجۡرٖ كَرِيمٍ ﴿١١﴾ إِنَّا نَحۡنُ نُحۡيِ ٱلۡمَوۡتَىٰ وَنَكۡتُبُ مَا قَدَّمُواْ وَءَاثَٰرَهُمۡۚ وَكُلَّ شَيۡءٍ أَحۡصَيۡنَٰهُ فِيٓ إِمَامٖ مُّبِينٖ ﴿١٢﴾ وَٱضۡرِبۡ لَهُم مَّثَلًا أَصۡحَٰبَ ٱلۡقَرۡيَةِ إِذۡ جَآءَهَا ٱلۡمُرۡسَلُونَ ﴿١٣﴾ إِذۡ أَرۡسَلۡنَآ إِلَيۡهِمُ ٱثۡنَيۡنِ فَكَذَّبُوهُمَا فَعَزَّزۡنَا بِثَالِثٖ فَقَالُوٓاْ إِنَّآ إِلَيۡكُم مُّرۡسَلُونَ ﴿١٤﴾ قَالُواْ مَآ أَنتُمۡ إِلَّا بَشَرٞ مِّثۡلُنَا وَمَآ أَنزَلَ ٱلرَّحۡمَٰنُ مِن شَيۡءٍ إِنۡ أَنتُمۡ إِلَّا تَكۡذِبُونَ ﴿١٥﴾ قَالُواْ رَبُّنَا يَعۡلَمُ إِنَّآ إِلَيۡكُمۡ لَمُرۡسَلُونَ ﴿١٦﴾ وَمَا عَلَيۡنَآ إِلَّا ٱلۡبَلَٰغُ ٱلۡمُبِينُ ﴿١٧﴾ قَالُوٓاْ إِنَّا تَطَيَّرۡنَا بِكُمۡۖ لَئِن لَّمۡ تَنتَهُواْ لَنَرۡجُمَنَّكُمۡ وَلَيَمَسَّنَّكُم مِّنَّا عَذَابٌ أَلِيمٞ ﴿١٨﴾ قَالُواْ طَٰٓئِرُكُم مَّعَكُمۡ أَئِن ذُكِّرۡتُمۚ بَلۡ أَنتُمۡ قَوۡمٞ مُّسۡرِفُونَ ﴿١٩﴾ وَجَآءَ مِنۡ أَقۡصَا ٱلۡمَدِينَةِ رَجُلٞ يَسۡعَىٰ قَالَ يَٰقَوۡمِ ٱتَّبِعُواْ ٱلۡمُرۡسَلِينَ ﴿٢٠﴾ ٱتَّبِعُواْ مَن لَّا يَسۡـَٔلُكُمۡ أَجۡرٗا وَهُم مُّهۡتَدُونَ ﴿٢١﴾ وَمَا لِيَ لَآ أَعۡبُدُ ٱلَّذِي فَطَرَنِي وَإِلَيۡهِ تُرۡجَعُونَ ﴿٢٢﴾ ءَأَتَّخِذُ مِن دُونِهِۦٓ ءَالِهَةً إِن يُرِدۡنِ ٱلرَّحۡمَٰنُ بِضُرّٖ لَّا تُغۡنِ عَنِّي شَفَٰعَتُهُمۡ شَيۡـٔٗا وَلَا يُنقِذُونِ ﴿٢٣﴾ إِنِّيٓ إِذٗا لَّفِي ضَلَٰلٖ مُّبِينٍ ﴿٢٤﴾ إِنِّيٓ ءَامَنتُ بِرَبِّكُمۡ فَٱسۡمَعُونِ ﴿٢٥﴾ قِيلَ ٱدۡخُلِ ٱلۡجَنَّةَۖ قَالَ يَٰلَيۡتَ قَوۡمِي يَعۡلَمُونَ ﴿٢٦﴾ بِمَا غَفَرَ لِي رَبِّي وَجَعَلَنِي مِنَ ٱلۡمُكۡرَمِينَ ﴿٢٧﴾ ۞وَمَآ أَنزَلۡنَا عَلَىٰ قَوۡمِهِۦ مِنۢ بَعۡدِهِۦ مِن جُندٖ مِّنَ ٱلسَّمَآءِ وَمَا كُنَّا مُنزِلِينَ ﴿٢٨﴾ إِن كَانَتۡ إِلَّا صَيۡحَةٗ وَٰحِدَةٗ فَإِذَا هُمۡ خَٰمِدُونَ ﴿٢٩﴾ يَٰحَسۡرَةً عَلَى ٱلۡعِبَادِۚ مَا يَأۡتِيهِم مِّن رَّسُولٍ إِلَّا كَانُواْ بِهِۦ يَسۡتَهۡزِءُونَ ﴿٣٠﴾ أَلَمۡ يَرَوۡاْ كَمۡ أَهۡلَكۡنَا قَبۡلَهُم مِّنَ ٱلۡقُرُونِ أَنَّهُمۡ إِلَيۡهِمۡ لَا يَرۡجِعُونَ ﴿٣١﴾ وَإِن كُلّٞ لَّمَّا جَمِيعٞ لَّدَيۡنَا مُحۡضَرُونَ ﴿٣٢﴾ وَءَايَةٞ لَّهُمُ ٱلۡأَرۡضُ ٱلۡمَيۡتَةُ أَحۡيَيۡنَٰهَا وَأَخۡرَجۡنَا مِنۡهَا حَبّٗا فَمِنۡهُ يَأۡكُلُونَ ﴿٣٣﴾ وَجَعَلۡنَا فِيهَا جَنَّٰتٖ مِّن نَّخِيلٖ وَأَعۡنَٰبٖ وَفَجَّرۡنَا فِيهَا مِنَ ٱلۡعُيُونِ ﴿٣٤﴾ لِيَأۡكُلُواْ مِن ثَمَرِهِۦ وَمَا عَمِلَتۡهُ أَيۡدِيهِمۡۚ أَفَلَا يَشۡكُرُونَ ﴿٣٥﴾ سُبۡحَٰنَ ٱلَّذِي خَلَقَ ٱلۡأَزۡوَٰجَ كُلَّهَا مِمَّا تُنۢبِتُ ٱلۡأَرۡضُ وَمِنۡ أَنفُسِهِمۡ وَمِمَّا لَا يَعۡلَمُونَ ﴿٣٦﴾ وَءَايَةٞ لَّهُمُ ٱلَّيۡلُ نَسۡلَخُ مِنۡهُ ٱلنَّهَارَ فَإِذَا هُم مُّظۡلِمُونَ ﴿٣٧﴾ وَٱلشَّمۡسُ تَجۡرِي لِمُسۡتَقَرّٖ لَّهَاۚ ذَٰلِكَ تَقۡدِيرُ ٱلۡعَزِيزِ ٱلۡعَلِيمِ ﴿٣٨﴾ وَٱلۡقَمَرَ قَدَّرۡنَٰهُ مَنَازِلَ حَتَّىٰ عَادَ كَٱلۡعُرۡجُونِ ٱلۡقَدِيمِ ﴿٣٩﴾ لَا ٱلشَّمۡسُ يَنۢبَغِي لَهَآ أَن تُدۡرِكَ ٱلۡقَمَرَ وَلَا ٱلَّيۡلُ سَابِقُ ٱلنَّهَارِۚ وَكُلّٞ فِي فَلَكٖ يَسۡبَحُونَ ﴿٤٠﴾ وَءَايَةٞ لَّهُمۡ أَنَّا حَمَلۡنَا ذُرِّيَّتَهُمۡ فِي ٱلۡفُلۡكِ ٱلۡمَشۡحُونِ ﴿٤١﴾ وَخَلَقۡنَا لَهُم مِّن مِّثۡلِهِۦ مَا يَرۡكَبُونَ ﴿٤٢﴾ وَإِن نَّشَأۡ نُغۡرِقۡهُمۡ فَلَا صَرِيخَ لَهُمۡ وَلَا هُمۡ يُنقَذُونَ ﴿٤٣﴾ إِلَّا رَحۡمَةٗ مِّنَّا وَمَتَٰعًا إِلَىٰ حِينٖ ﴿٤٤﴾ وَإِذَا قِيلَ لَهُمُ ٱتَّقُواْ مَا بَيۡنَ أَيۡدِيكُمۡ وَمَا خَلۡفَكُمۡ لَعَلَّكُمۡ تُرۡحَمُونَ ﴿٤٥﴾ وَمَا تَأۡتِيهِم مِّنۡ ءَايَةٖ مِّنۡ ءَايَٰتِ رَبِّهِمۡ إِلَّا كَانُواْ عَنۡهَا مُعۡرِضِينَ ﴿٤٦﴾ وَإِذَا قِيلَ لَهُمۡ أَنفِقُواْ مِمَّا رَزَقَكُمُ ٱللَّهُ قَالَ ٱلَّذِينَ كَفَرُواْ لِلَّذِينَ ءَامَنُوٓاْ أَنُطۡعِمُ مَن لَّوۡ يَشَآءُ ٱللَّهُ أَطۡعَمَهُۥٓ إِنۡ أَنتُمۡ إِلَّا فِي ضَلَٰلٖ مُّبِينٖ ﴿٤٧﴾ وَيَقُولُونَ مَتَىٰ هَٰذَا ٱلۡوَعۡدُ إِن كُنتُمۡ صَٰدِقِينَ ﴿٤٨﴾ مَا يَنظُرُونَ إِلَّا صَيۡحَةٗ وَٰحِدَةٗ تَأۡخُذُهُمۡ وَهُمۡ يَخِصِّمُونَ ﴿٤٩﴾ فَلَا يَسۡتَطِيعُونَ تَوۡصِيَةٗ وَلَآ إِلَىٰٓ أَهۡلِهِمۡ يَرۡجِعُونَ ﴿٥٠﴾ وَنُفِخَ فِي ٱلصُّورِ فَإِذَا هُم مِّنَ ٱلۡأَجۡدَاثِ إِلَىٰ رَبِّهِمۡ يَنسِلُونَ ﴿٥١﴾ قَالُواْ يَٰوَيۡلَنَا مَنۢ بَعَثَنَا مِن مَّرۡقَدِنَاۜۗ هَٰذَا مَا وَعَدَ ٱلرَّحۡمَٰنُ وَصَدَقَ ٱلۡمُرۡسَلُونَ ﴿٥٢﴾ إِن كَانَتۡ إِلَّا صَيۡحَةٗ وَٰحِدَةٗ فَإِذَا هُمۡ جَمِيعٞ لَّدَيۡنَا مُحۡضَرُونَ ﴿٥٣﴾ فَٱلۡيَوۡمَ لَا تُظۡلَمُ نَفۡسٞ شَيۡـٔٗا وَلَا تُجۡزَوۡنَ إِلَّا مَا كُنتُمۡ تَعۡمَلُونَ ﴿٥٤﴾ إِنَّ أَصۡحَٰبَ ٱلۡجَنَّةِ ٱلۡيَوۡمَ فِي شُغُلٖ فَٰكِهُونَ ﴿٥٥﴾ هُمۡ وَأَزۡوَٰجُهُمۡ فِي ظِلَٰلٍ عَلَى ٱلۡأَرَآئِكِ مُتَّكِـُٔونَ ﴿٥٦﴾ لَهُمۡ فِيهَا فَٰكِهَةٞ وَلَهُم مَّا يَدَّعُونَ ﴿٥٧﴾ سَلَٰمٞ قَوۡلٗا مِّن رَّبّٖ رَّحِيمٖ ﴿٥٨﴾ وَٱمۡتَٰزُواْ ٱلۡيَوۡمَ أَيُّهَا ٱلۡمُجۡرِمُونَ ﴿٥٩﴾ ۞أَلَمۡ أَعۡهَدۡ إِلَيۡكُمۡ يَٰبَنِيٓ ءَادَمَ أَن لَّا تَعۡبُدُواْ ٱلشَّيۡطَٰنَۖ إِنَّهُۥ لَكُمۡ عَدُوّٞ مُّبِينٞ ﴿٦٠﴾ وَأَنِ ٱعۡبُدُونِيۚ هَٰذَا صِرَٰطٞ مُّسۡتَقِيمٞ ﴿٦١﴾ وَلَقَدۡ أَضَلَّ مِنكُمۡ جِبِلّٗا كَثِيرًاۖ أَفَلَمۡ تَكُونُواْ تَعۡقِلُونَ ﴿٦٢﴾ هَٰذِهِۦ جَهَنَّمُ ٱلَّتِي كُنتُمۡ تُوعَدُونَ ﴿٦٣﴾ ٱصۡلَوۡهَا ٱلۡيَوۡمَ بِمَا كُنتُمۡ تَكۡفُرُونَ ﴿٦٤﴾ ٱلۡيَوۡمَ نَخۡتِمُ عَلَىٰٓ أَفۡوَٰهِهِمۡ وَتُكَلِّمُنَآ أَيۡدِيهِمۡ وَتَشۡهَدُ أَرۡجُلُهُم بِمَا كَانُواْ يَكۡسِبُونَ ﴿٦٥﴾ وَلَوۡ نَشَآءُ لَطَمَسۡنَا عَلَىٰٓ أَعۡيُنِهِمۡ فَٱسۡتَبَقُواْ ٱلصِّرَٰطَ فَأَنَّىٰ يُبۡصِرُونَ ﴿٦٦﴾ وَلَوۡ نَشَآءُ لَمَسَخۡنَٰهُمۡ عَلَىٰ مَكَانَتِهِمۡ فَمَا ٱسۡتَطَٰعُواْ مُضِيّٗا وَلَا يَرۡجِعُونَ ﴿٦٧﴾ وَمَن نُّعَمِّرۡهُ نُنَكِّسۡهُ فِي ٱلۡخَلۡقِۚ أَفَلَا يَعۡقِلُونَ ﴿٦٨﴾ وَمَا عَلَّمۡنَٰهُ ٱلشِّعۡرَ وَمَا يَنۢبَغِي لَهُۥٓۚ إِنۡ هُوَ إِلَّا ذِكۡرٞ وَقُرۡءَانٞ مُّبِينٞ ﴿٦٩﴾ لِّيُنذِرَ مَن كَانَ حَيّٗا وَيَحِقَّ ٱلۡقَوۡلُ عَلَى ٱلۡكَٰفِرِينَ ﴿٧٠﴾ أَوَلَمۡ يَرَوۡاْ أَنَّا خَلَقۡنَا لَهُم مِّمَّا عَمِلَتۡ أَيۡدِينَآ أَنۡعَٰمٗا فَهُمۡ لَهَا مَٰلِكُونَ ﴿٧١﴾ وَذَلَّلۡنَٰهَا لَهُمۡ فَمِنۡهَا رَكُوبُهُمۡ وَمِنۡهَا يَأۡكُلُونَ ﴿٧٢﴾ وَلَهُمۡ فِيهَا مَنَٰفِعُ وَمَشَارِبُۚ أَفَلَا يَشۡكُرُونَ ﴿٧٣﴾ وَٱتَّخَذُواْ مِن دُونِ ٱللَّهِ ءَالِهَةٗ لَّعَلَّهُمۡ يُنصَرُونَ ﴿٧٤﴾ لَا يَسۡتَطِيعُونَ نَصۡرَهُمۡ وَهُمۡ لَهُمۡ جُندٞ مُّحۡضَرُونَ ﴿٧٥﴾ فَلَا يَحۡزُنكَ قَوۡلُهُمۡۘ إِنَّا نَعۡلَمُ مَا يُسِرُّونَ وَمَا يُعۡلِنُونَ ﴿٧٦﴾ أَوَلَمۡ يَرَ ٱلۡإِنسَٰنُ أَنَّا خَلَقۡنَٰهُ مِن نُّطۡفَةٖ فَإِذَا هُوَ خَصِيمٞ مُّبِينٞ ﴿٧٧﴾ وَضَرَبَ لَنَا مَثَلٗا وَنَسِيَ خَلۡقَهُۥۖ قَالَ مَن يُحۡيِ ٱلۡعِظَٰمَ وَهِيَ رَمِيمٞ ﴿٧٨﴾ قُلۡ يُحۡيِيهَا ٱلَّذِيٓ أَنشَأَهَآ أَوَّلَ مَرَّةٖۖ وَهُوَ بِكُلِّ خَلۡقٍ عَلِيمٌ ﴿٧٩﴾ ٱلَّذِي جَعَلَ لَكُم مِّنَ ٱلشَّجَرِ ٱلۡأَخۡضَرِ نَارٗا فَإِذَآ أَنتُم مِّنۡهُ تُوقِدُونَ ﴿٨٠﴾ أَوَلَيۡسَ ٱلَّذِي خَلَقَ ٱلسَّمَٰوَٰتِ وَٱلۡأَرۡضَ بِقَٰدِرٍ عَلَىٰٓ أَن يَخۡلُقَ مِثۡلَهُمۚ بَلَىٰ وَهُوَ ٱلۡخَلَّٰقُ ٱلۡعَلِيمُ ﴿٨١﴾ إِنَّمَآ أَمۡرُهُۥٓ إِذَآ أَرَادَ شَيۡـًٔا أَن يَقُولَ لَهُۥ كُن فَيَكُونُ ﴿٨٢﴾ فَسُبۡحَٰنَ ٱلَّذِي بِيَدِهِۦ مَلَكُوتُ كُلِّ شَيۡءٖ وَإِلَيۡهِ تُرۡجَعُونَ ﴿٨٣﴾
+                </p>
+            </div>
+            <div class="p-4 bg-white/80 rounded-b-3xl text-center text-sm font-bold text-tan-800 border-t border-tan-200">
+                صدق الله العظيم
+            </div>
+        </div>
+    </div>
+
+    <!-- Mulk Modal -->
+    <div id="mulk-modal" class="fixed inset-0 z-50 hidden bg-black/70 backdrop-blur-sm flex items-center justify-center p-4 opacity-0 transition-opacity duration-300">
+        <div class="bg-tan-50 rounded-3xl shadow-2xl w-full max-w-2xl max-h-[85vh] flex flex-col relative transform scale-95 transition-transform duration-300 border border-gold-400/40">
+            <div class="islamic-pattern p-4 rounded-t-3xl flex justify-between items-center border-b-4 border-gold-400">
+                <h3 class="text-xl font-bold text-gold-100 font-quran text-shadow-gold">سورة الملك</h3>
+                <button onclick="closeModal('mulk-modal')" class="text-gold-100 hover:text-white bg-white/10 hover:bg-white/20 rounded-full w-8 h-8 flex items-center justify-center transition active-scale">
+                    <i class="fa-solid fa-xmark"></i>
+                </button>
+            </div>
+            <div class="p-6 md:p-8 overflow-y-auto font-quran text-center text-xl leading-loose md:text-2xl md:leading-loose text-tan-950 space-y-4 custom-scrollbar">
+                <p class="font-bold text-gold-600 sticky top-0 bg-tan-50/90 py-1">بِسْمِ اللَّهِ الرَّحْمَنِ الرَّحِيمِ</p>
+                <p dir="rtl" class="text-justify leading-loose">
+                    تَبَٰرَكَ ٱلَّذِي بِيَدِهِ ٱلۡمُلۡكُ وَهُوَ عَلَىٰ كُلِّ شَيۡءٖ قَدِيرٌ ﴿١﴾ ٱلَّذِي خَلَقَ ٱلۡمَوۡتَ وَٱلۡحَيَوٰةَ لِيَبۡلُوَكُمۡ أَيُّكُمۡ أَحۡسَنُ عَمَلٗاۚ وَهُوَ ٱلۡعَزِيزُ ٱلۡغَفُورُ ﴿٢﴾ ٱلَّذِي خَلَقَ سَبۡعَ سَمَٰوَٰتٖ طِبَاقٗاۖ مَّا تَرَىٰ فِي خَلۡقِ ٱلرَّحۡمَٰنِ مِن تَفَٰوُتٖۖ فَٱرۡجِعِ ٱلۡبَصَرَ هَلۡ تَرَىٰ مِن فُطُورٖ ﴿٣﴾ ثُمَّ ٱرۡجِعِ ٱلۡبَصَرَ كَرَّتَيۡنِ يَنقَلِبۡ إِلَيۡكَ ٱلۡبَصَرُ خَاسِئٗا وَهُوَ حَسِيرٞ ﴿٤﴾ وَلَقَدۡ زَيَّنَّا ٱلسَّمَآءَ ٱلدُّنۡيَا بِمَصَٰبِيحَ وَجَعَلۡنَٰهَا رُجُومٗا لِّلشَّيَٰطِينِۖ وَأَعۡتَدۡنَا لَهُمۡ عَذَابَ ٱلسَّعِيرِ ﴿٥﴾ وَلِلَّذِينَ كَفَرُواْ بِرَبِّهِمۡ عَذَابُ جَهَنَّمَۖ وَبِئۡسَ ٱلۡمَصِيرُ ﴿٦﴾ إِذَآ أُلۡقُواْ فِيهَا سَمِعُواْ لَهَا شَهِيقٗا وَهِيَ تَفُورُ ﴿٧﴾ تَكَادُ تَمَيَّزُ مِنَ ٱلۡغَيۡظِۖ كُلَّمَآ أُلۡقِيَ فِيهَا فَوۡجٞ سَأَلَهُمۡ خَزَنَتُهَآ أَلَمۡ يَأۡتِكُمۡ نَذِيرٞ ﴿٨﴾ قَالُواْ بَلَىٰ قَدۡ جَآءَنَا نَذِيرٞ فَكَذَّبۡنَا وَقُلۡنَا مَا نَزَّلَ ٱللَّهُ مِن شَيۡءٍ إِنۡ أَنتُمۡ إِلَّا فِي ضَلَٰلٖ كَبِيرٖ ﴿٩﴾ وَقَالُواْ لَوۡ كُنَّا نَسۡمَعُ أَوۡ نَعۡقِلُ مَا كُنَّا فِيٓ أَصۡحَٰبِ ٱلسَّعِيرِ ﴿١٠﴾ فَٱعۡتَرَفُواْ بِذَنۢبِهِمۡ فَسُحۡقٗا لِّأَصۡحَٰبِ ٱلسَّعِيرِ ﴿١١﴾ إِنَّ ٱلَّذِينَ يَخۡشَوۡنَ رَبَّهُم بِٱلۡغَيۡبِ لَهُم مَّغۡفِرَةٞ وَأَجۡرٞ كَبِيرٞ ﴿١٢﴾ وَأَسِرُّواْ قَوۡلَكُمۡ أَوِ ٱجۡهَرُواْ بِهِۦٓۖ إِنَّهُۥ عَلِيمُۢ بِذَاتِ ٱلصُّدُورِ ﴿١٣﴾ أَلَا يَعۡلَمُ مَنۡ خَلَقَ وَهُوَ ٱللَّطِيفُ ٱلۡخَبِيرُ ﴿١٤﴾ هُوَ ٱلَّذِي جَعَلَ لَكُمُ ٱلۡأَرۡضَ ذَلُولٗا فَٱمۡشُواْ فِي مَنَاكِبِهَا وَكُلُواْ مِن رِّزۡقِهِۦۖ وَإِلَيۡهِ ٱلنُّشُورُ ﴿١٥﴾ ءَأَمِنتُم مَّن فِي ٱلسَّمَآءِ أَن يَخۡسِفَ بِكُمُ ٱلۡأَرۡضَ فَإِذَا هِيَ تَمُورُ ﴿١٦﴾ أَمۡ أَمِنتُم مَّن فِي ٱلسَّمَآءِ أَن يُرۡسِلَ عَلَيۡكُمۡ حَاصِبٗاۖ فَسَتَعۡلَمُونَ كَيۡفَ نَذِيرِ ﴿١٧﴾ وَلَقَدۡ كَذَّبَ ٱلَّذِينَ مِن قَبۡلِهِمۡ فَكَيۡفَ كَانَ نَكِيرِ ﴿١٨﴾ أَوَلَمۡ يَرَوۡاْ إِلَى ٱلطَّيۡرِ فَوۡقَهُمۡ صَٰٓفَّٰتٖ وَيَقۡبِضۡنَۚ مَا يُمۡسِكُهُنَّ إِلَّا ٱلرَّحۡمَٰنُۚ إِنَّهُۥ بِكُلِّ شَيۡءِۭ بَصِيرٌ ﴿١٩﴾ أَمَّنۡ هَٰذَا ٱلَّذِي هُوَ جُندٞ لَّكُمۡ يَنصُرُكُم مِّن دُونِ ٱلرَّحۡمَٰنِۚ إِنِ ٱلۡكَٰفِرُونَ إِلَّا فِي غُرُورٍ ﴿٢٠﴾ أَمَّنۡ هَٰذَا ٱلَّذِي يَرۡزُقُكُمۡ إِنۡ أَمۡسَكَ رِزۡقَهُۥۚ بَل لَّجُّواْ فِي عُتُوّٖ وَنُفُورٍ ﴿٢١﴾ أَفَمَن يَمۡشِي مُكِبًّا عَلَىٰ وَجۡهِهِۦٓ أَهۡدَىٰٓ أَمَّن يَمۡشِي سَوِيًّا عَلَىٰ صِرَٰطٖ مُّسۡتَقِيمٖ ﴿٢٢﴾ قُلۡ هُوَ ٱلَّذِيٓ أَنشَأَكُمۡ وَجَعَلَ لَكُمُ ٱلسَّمۡعَ وَٱلۡأَبۡصَٰرَ وَٱلۡأَفۡـِٔدَةَۚ قَلِيلٗا مَّا تَشۡكُرُونَ ﴿٢٣﴾ قُلۡ هُوَ ٱلَّذِي ذَرَأَكُمۡ فِي ٱلۡأَرۡضِ وَإِلَيۡهِ تُحۡشَرُونَ ﴿٢٤﴾ وَيَقُولُونَ مَتَىٰ هَٰذَا ٱلۡوَعۡدُ إِن كُنتُمۡ صَٰدِقِينَ ﴿٢٥﴾ قُلۡ إِنَّمَا ٱلۡعِلۡمُ عِندَ ٱللَّهِ وَإِنَّمَآ أَنَا۠ نَذِيرٞ مُّبِينٞ ﴿٢٦﴾ فَلَمَّا رَأَوۡهُ زُلۡفَةٗ سِيٓـَٔتۡ وُجُوهُ ٱلَّذِينَ كَفَرُواْ وَقِيلَ هَٰذَا ٱلَّذِي كُنتُم بِهِۦ تَدَّعُونَ ﴿٢٧﴾ قُلۡ أَرَءَيۡتُمۡ إِنۡ أَهۡلَكَنِيَ ٱللَّهُ وَمَن مَّعِيَ أَوۡ رَحِمَنَا فَمَن يُجِيرُ ٱلۡكَٰفِرِينَ مِنۡ عَذَابٍ أَلِيمٖ ﴿٢٨﴾ قُلۡ هُوَ ٱلرَّحۡمَٰنُ ءَامَنَّا بِهِۦ وَعَلَيۡهِ تَوَكَّلْنَاۖ فَسَتَعۡلَمُونَ مَنۡ هُوَ فِي ضَلَٰلٖ مُّبِينٖ ﴿٢٩﴾ قُلۡ أَرَءَيۡتُمۡ إِنۡ أَصۡبَحَ مَآؤُكُمۡ غَوۡرٗا فَمَن يَأۡتِيكُم بِمَآءٖ مَّعِينِۭ ﴿٣٠﴾
+                </p>
+            </div>
+            <div class="p-4 bg-white/80 rounded-b-3xl text-center text-sm font-bold text-tan-800 border-t border-tan-200">
+                صدق الله العظيم
+            </div>
+        </div>
+    </div>
+
+    <div id="toast" class="fixed bottom-6 left-1/2 transform -translate-x-1/2 bg-tan-900 text-gold-100 border border-gold-400 px-6 py-3 rounded-2xl shadow-2xl opacity-0 pointer-events-none transition-all duration-300 z-50 flex items-center gap-3">
+        <i class="fa-solid fa-circle-check text-gold-400 text-lg"></i>
+        <span id="toast-message" class="text-sm font-bold">تم التخصيص بنجاح</span>
+    </div>
+
+    <footer class="islamic-pattern text-gold-200 text-center py-8 px-4 border-t-2 border-gold-500 mt-12 text-sm">
+        <div class="max-w-4xl mx-auto space-y-3">
+            <p class="font-amiri text-lg text-gold-300">
+                اللهم اجعل هذا العمل خالصاً لوجهك الكريم، وصدقة جارية لروح المغفور له بإذن الله <span class="font-bold text-gold-100">زكريا بدران</span>
+            </p>
+            <p class="text-xs text-tan-300">
+                نسألكم الفاتحة والدعاء له بالرحمة والمغفرة
+            </p>
+        </div>
+    </footer>
+
+    <script>
+        const TASBEEH_ITEMS = [
+            { id: 'subhanallah', title: 'سُبْحَانَ اللَّهِ', count: 0 },
+            { id: 'alhamdulillah', title: 'الْحَمْدُ لِلَّهِ', count: 0 },
+            { id: 'la_ilaha_illallah', title: 'لَا إِلَهَ إِلَّا اللَّهُ', count: 0 },
+            { id: 'allah_uakbar', title: 'اللَّهُ أَكْبَرُ', count: 0 },
+            { id: 'astaghfirullah', title: 'أَسْتَغْفِرُ اللَّهَ الْعَظِيمَ', count: 0 },
+            { id: 'salawat', title: 'اللَّهُمَّ صَلِّ وَسَلِّمْ عَلَى نَبِيِّنَا مُحَمَّدٍ', count: 0 },
+            { id: 'hawqala', title: 'لَا حَوْلَ وَلَا قُوَّةَ إِلَّا بِاللَّهِ', count: 0 },
+            { id: 'subhanallah_bihamdihi', title: 'سُبْحَانَ اللَّهِ وَبِحَمْدِهِ سُبْحَانَ اللَّهِ الْعَظِيمِ', count: 0 },
+            { id: 'yunus_dua', title: 'لَّا إِلَٰهَ إِلَّا أَنتَ سُبْحَانَكَ إِنِّي كُنتُ مِنَ الظَّالِمِينَ', count: 0 },
+            { id: 'dua_zakaria_1', title: 'اللَّهُمَّ اغْفِرْ لِزَكَرِيَّا بَدْرَان وَارْحَمْهُ', count: 0 },
+            { id: 'dua_zakaria_2', title: 'اللَّهُمَّ اجْعَلْ قَبْرَهُ رَوْضَةً مِنْ رِيَاضِ الْجَنَّةِ', count: 0 },
+            { id: 'hasbiyallah', title: 'حَسْبِيَ اللَّهُ وَنِعْمَ الْوَكِيلُ', count: 0 }
+        ];
+
+        const audioTracks = {
+            'fatiha': { title: 'سورة الفاتحة', url: 'https://server8.mp3quran.net/afs/001.mp3' },
+            'yasin': { title: 'سورة يس', url: 'https://server8.mp3quran.net/afs/036.mp3' },
+            'mulk': { title: 'سورة الملك', url: 'https://server8.mp3quran.net/afs/067.mp3' }
+        };
+
+        window.addEventListener('DOMContentLoaded', () => {
+            loadCounters();
+            renderTasbeehGrid();
+            updateTotalDisplay();
+        });
+
+        function loadCounters() {
+            TASBEEH_ITEMS.forEach(item => {
+                const saved = localStorage.getItem(`tasbeeh_${item.id}`);
+                if (saved !== null) {
+                    item.count = parseInt(saved, 10) || 0;
+                }
+            });
+        }
+
+        function renderTasbeehGrid() {
+            const grid = document.getElementById('tasbeeh-grid');
+            grid.innerHTML = '';
+
+            TASBEEH_ITEMS.forEach(item => {
+                const card = document.createElement('div');
+                card.className = "bg-tan-950 border border-gold-500/30 rounded-2xl p-4 flex flex-col justify-between space-y-3 hover:border-gold-400 transition shadow-lg";
+                card.innerHTML = `
+                    <div class="text-center space-y-1">
+                        <p class="font-amiri text-lg md:text-xl font-bold text-gold-100 min-h-[56px] flex items-center justify-center">${item.title}</p>
+                    </div>
+                    <div class="flex items-center justify-between gap-2 bg-tan-900/80 p-2 rounded-xl border border-gold-500/20">
+                        <button onclick="resetSingleCounter('${item.id}')" class="text-xs text-tan-400 hover:text-gold-300 w-8 h-8 rounded-lg hover:bg-tan-800 flex items-center justify-center transition active-scale" title="إعادة ضبط">
+                            <i class="fa-solid fa-rotate-right"></i>
+                        </button>
+                        <span id="counter-${item.id}" class="text-2xl font-bold font-mono text-gold-400">${item.count}</span>
+                        <button onclick="incrementCounter('${item.id}')" class="tasbeeh-btn bg-gold-500 hover:bg-gold-400 text-tan-950 font-bold px-4 py-2 rounded-lg text-sm transition active-scale flex items-center gap-1 shadow-md">
+                            <i class="fa-solid fa-plus text-xs"></i>
+                            تسبيح
+                        </button>
+                    </div>
+                `;
+                grid.appendChild(card);
+            });
+        }
+
+        function incrementCounter(id) {
+            const item = TASBEEH_ITEMS.find(i => i.id === id);
+            if (item) {
+                item.count++;
+                localStorage.setItem(`tasbeeh_${item.id}`, item.count);
+                document.getElementById(`counter-${item.id}`).textContent = item.count;
+                updateTotalDisplay();
+                
+                // Vibration feedback if supported on touch mobile
+                if (navigator.vibrate) {
+                    navigator.vibrate(25);
+                }
+            }
+        }
+
+        function resetSingleCounter(id) {
+            const item = TASBEEH_ITEMS.find(i => i.id === id);
+            if (item) {
+                item.count = 0;
+                localStorage.setItem(`tasbeeh_${item.id}`, 0);
+                document.getElementById(`counter-${item.id}`).textContent = 0;
+                updateTotalDisplay();
+                showToast('تم إعادة ضبط العداد');
+            }
+        }
+
+        function resetAllCounters() {
+            TASBEEH_ITEMS.forEach(item => {
+                item.count = 0;
+                localStorage.setItem(`tasbeeh_${item.id}`, 0);
+            });
+            renderTasbeehGrid();
+            updateTotalDisplay();
+            showToast('تم إعادة ضبط جميع العدادات');
+        }
+
+        function updateTotalDisplay() {
+            const total = TASBEEH_ITEMS.reduce((sum, item) => sum + item.count, 0);
+            document.getElementById('total-counter').textContent = total.toLocaleString('ar-EG');
+        }
+
+        let isPlaying = false;
+        const audio = document.getElementById('quran-audio');
+        const playBtn = document.getElementById('play-btn');
+        const playIcon = document.getElementById('play-icon');
+
+        function toggleAudio() {
+            if (isPlaying) {
+                audio.pause();
+                playIcon.className = 'fa-solid fa-play';
+                isPlaying = false;
+            } else {
+                audio.play().then(() => {
+                    playIcon.className = 'fa-solid fa-pause';
+                    isPlaying = true;
+                }).catch(err => {
+                    showToast('تعذر تشغيل الصوت تلقائياً');
+                });
+            }
+        }
+
+        function changeTrack(key) {
+            const track = audioTracks[key];
+            if (track) {
+                document.getElementById('current-track-title').textContent = track.title;
+                const source = document.getElementById('audio-source');
+                source.src = track.url;
+                audio.load();
+                if (isPlaying) {
+                    audio.play();
+                }
+            }
+        }
+
+        function onAudioEnded() {
+            playIcon.className = 'fa-solid fa-play';
+            isPlaying = false;
+        }
+
+        function openModal(id) {
+            const modal = document.getElementById(id);
+            if (modal) {
+                modal.classList.remove('hidden');
+                setTimeout(() => {
+                    modal.classList.remove('opacity-0');
+                    modal.children[0].classList.remove('scale-95');
+                    modal.children[0].classList.add('scale-100');
+                }, 10);
+            }
+        }
+
+        function closeModal(id) {
+            const modal = document.getElementById(id);
+            if (modal) {
+                modal.classList.add('opacity-0');
+                modal.children[0].classList.remove('scale-100');
+                modal.children[0].classList.add('scale-95');
+                setTimeout(() => {
+                    modal.classList.add('hidden');
+                }, 300);
+            }
+        }
+
+        // Close modal on escape key or backdrop click
+        window.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape') {
+                ['fatiha-modal', 'yasin-modal', 'mulk-modal'].forEach(closeModal);
+            }
+        });
+
+        ['fatiha-modal', 'yasin-modal', 'mulk-modal'].forEach(id => {
+            const modal = document.getElementById(id);
+            if (modal) {
+                modal.addEventListener('click', (e) => {
+                    if (e.target === modal) closeModal(id);
+                });
+            }
+        });
+
+        function copyText(elementId) {
+            const text = document.getElementById(elementId).innerText;
+            copyToClipboard(text);
+        }
+
+        function copyPoemText() {
+            const poemText = `في رثاء زكريا بدران:
+رَحَلْتَ إِلَى رَبِّ الْعِبَادِ مُسَلِّماً *** وَخَلَّفْتَ فِي الْقَلْبِ الْجَرِيحِ تَذَكُّرَا
+فَيَا قَبْرَ ذَكَرِيَّا عَلَيْكَ سَلَامَةٌ *** وَمِنْ رَبِّكَ الرَّحْمَنِ نِلْتَ الْمُعَظَّرَا
+سَتَبْقَى فِي الْجَنَّاتِ تَحْظَى بِنَعِيمِهَا *** وَتَسْكُنُ فِي الْفِرْدَوْسِ رُوحُكَ مُبْشِرَا`;
+            copyToClipboard(poemText);
+        }
+
+        function copyToClipboard(text) {
+            const tempInput = document.createElement('textarea');
+            tempInput.value = text;
+            document.body.appendChild(tempInput);
+            tempInput.select();
+            try {
+                document.execCommand('copy');
+                showToast('تم نسخ النص بنجاح');
+            } catch (err) {
+                showToast('حدث خطأ أثناء النسخ');
+            }
+            document.body.removeChild(tempInput);
+        }
+
+        function sharePage() {
+            copyToClipboard(window.location.href);
+            showToast('تم نسخ رابط الصفحة لمشاركتها');
+        }
+
+        function showToast(message) {
+            const toast = document.getElementById('toast');
+            const toastMsg = document.getElementById('toast-message');
+            toastMsg.textContent = message;
+            toast.classList.remove('opacity-0', 'pointer-events-none');
+            toast.classList.add('opacity-100');
+            setTimeout(() => {
+                toast.classList.remove('opacity-100');
+                toast.classList.add('opacity-0', 'pointer-events-none');
+            }, 3000);
+        }
+    </script>
+</body>
+</html>
